@@ -1,3 +1,6 @@
 class Note < ApplicationRecord
-    # 1st - 
+    
+    def new_method
+        puts 'hello'
+    end
 end
