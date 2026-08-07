@@ -1,8 +1,9 @@
 class ItemsController < ApplicationController
+    def index
+        @items = Item.all
+    end
+    
     def show
-        @item = Item.new(
-            title: 'CD',
-            expected_cost: 12.99
-        )
+        @item = Item.find(params[:id])
     end
 end
