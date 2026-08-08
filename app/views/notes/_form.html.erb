@@ -2,7 +2,7 @@
     <% if @note.errors.any? %>
         <ul>
             <% @note.errors.each do |error| %>
-                <li><%= error.full_message %>
+                <li><%= error.full_message %></li>
             <% end %>
         </ul>
     <% end %>
